@@ -1,0 +1,126 @@
+/* --- VARIABLES & BASIC SETUP --- */
+:root {
+    --bg-color: #f8f9fa; /* Light grey background */
+    --primary-color: #ffffff; /* White for cards */
+    --accent-color: #0d47a1; /* Professional Navy Blue */
+    --text-color: #212529; /* Dark text for readability */
+    --subtle-text-color: #6c757d; /* Grey for subtitles */
+    --border-color: #dee2e6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+.section-title { font-size: 2.5rem; font-weight: 600; text-align: center; margin-bottom: 3rem; color: var(--accent-color); }
+section { padding: 6rem 0; }
+
+/* --- NAVBAR --- */
+.navbar { background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: fixed; width: 100%; z-index: 1000; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-logo { font-size: 1.5rem; font-weight: 700; color: var(--accent-color); text-decoration: none; }
+.nav-menu { list-style: none; display: flex; gap: 2rem; }
+.nav-menu a { color: var(--subtle-text-color); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+.nav-menu a:hover, .nav-menu a.active { color: var(--accent-color); }
+
+/* --- UPDATED HERO SECTION (Home Page with Image) --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff; /* Text color changed to white for readability on image */
+    /* New background image properties */
+    background-image: linear-gradient(rgba(10, 20, 30, 0.7), rgba(10, 20, 30, 0.7)), url('images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: creates a cool parallax effect */
+}
+.hero-title { font-size: 4rem; font-weight: 700; }
+.hero-subtitle { font-size: 1.5rem; font-weight: 300; margin: 1rem 0 2rem 0; }
+.cta-button { display: inline-block; background-color: var(--accent-color); color: #ffffff; padding: 1rem 3rem; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.cta-button:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+/* --- PAGE HEADER (For sub-pages) --- */
+.page-header { background-color: var(--primary-color); padding: 8rem 0 4rem 0; text-align: center; border-bottom: 1px solid var(--border-color); }
+
+/* --- ABOUT PAGE --- */
+.about-content { display: flex; align-items: center; gap: 3rem; }
+.about-image img { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 5px solid var(--primary-color); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.about-text { flex: 1; }
+.skills-section { background-color: #fff; border-top: 1px solid var(--border-color); }
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.skill-category h3 { margin-bottom: 1rem; border-left: 3px solid var(--accent-color); padding-left: 10px; }
+.skill-tags span { display: inline-block; background-color: var(--bg-color); color: var(--subtle-text-color); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 5px; margin: 5px; font-size: 0.9rem; }
+
+/* --- PROJECTS PAGE --- */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.project-card { background-color: var(--primary-color); border-radius: 10px; border: 1px solid var(--border-color); overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.project-card:hover { transform: translateY(-10px); box-shadow: 0 15px 25px rgba(0,0,0,0.1); }
+.project-card img { width: 100%; height: 200px; object-fit: cover; }
+.project-card h3 { padding: 1.5rem 1.5rem 0.5rem 1.5rem; }
+.project-card p { padding: 0 1.5rem; font-size: 0.9rem; color: var(--subtle-text-color); }
+.project-tags { padding: 1rem 1.5rem; }
+.project-tags span { display: inline-block; background-color: var(--bg-color); font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 50px; margin-right: 5px; }
+.project-links { padding: 0 1.5rem 1.5rem 1.5rem; display: flex; gap: 1rem; }
+.project-links a { color: var(--accent-color); text-decoration: none; font-weight: 600; }
+
+/* --- UPDATED EDUCATION PAGE (with Image) --- */
+.education-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--primary-color);
+    padding: 3rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+.education-details { flex: 2; }
+.education-image { flex: 1; }
+.education-image img { width: 100%; border-radius: 10px; }
+.education-entry { border-left: 5px solid var(--accent-color); padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.education-entry:last-child { margin-bottom: 0; }
+
+/* --- NEW CONTACT PAGE THEME --- */
+#contact-page .contact-section {
+    background-color: var(--accent-color); /* Themed background */
+}
+#contact-page .section-title,
+#contact-page .contact-content h3,
+#contact-page .contact-content p {
+    color: #ffffff; /* White text on the dark background */
+}
+#contact-page .contact-content {
+    background-color: transparent; /* Remove white box */
+    border: none;
+}
+#contact-page .social-links-contact a {
+    color: var(--bg-color);
+    transition: color 0.3s ease;
+}
+#contact-page .social-links-contact a:hover {
+    color: #ffffff;
+}
+#contact-page .cta-button {
+    background-color: #ffffff; /* Inverted button style */
+    color: var(--accent-color);
+}
+.contact-content { max-width: 600px; margin: 0 auto; text-align: center; background-color: var(--primary-color); padding: 3rem; border-radius: 10px; border: 1px solid var(--border-color); }
+
+/* --- FOOTER --- */
+.footer { background-color: var(--primary-color); text-align: center; padding: 2rem 0; font-size: 0.9rem; border-top: 1px solid var(--border-color); }
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    .nav-menu { display: none; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+    .about-content, .education-content { flex-direction: column; text-align: center; }
+    .skills-grid { grid-template-columns: 1fr; }
+}
