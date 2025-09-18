@@ -1,4 +1,6 @@
-/* --- PROFESSIONAL DARK THEME V6 (FINAL RESPONSIVE FIX) --- */
+/* --- PROFESSIONAL DARK THEME V7 (FINAL) --- */
+
+/* --- VARIABLES & BASIC SETUP --- */
 :root {
     --bg-color: #121212;
     --primary-color: #1E1E1E;
@@ -7,6 +9,7 @@
     --subtle-text-color: #A0A0A0;
     --border-color: #2F2F2F;
 }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.7; }
@@ -27,11 +30,7 @@ section { padding: 6rem 0; }
 .bar { display: block; width: 25px; height: 3px; margin: 5px auto; transition: all 0.3s ease-in-out; background-color: var(--text-color); }
 
 /* --- HERO SECTION --- */
-/* This image is hidden by default on desktop */
-.hero-image-mobile {
-    display: none;
-}
-.hero { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
+.hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #ffffff; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
 .hero-title { font-size: 4rem; font-weight: 700; }
 .hero-subtitle { font-size: 1.5rem; font-weight: 300; margin: 1rem 0 2rem 0; }
 .cta-button { display: inline-block; background-color: var(--accent-color); color: var(--bg-color); padding: 1rem 3rem; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -81,20 +80,9 @@ section { padding: 6rem 0; }
     .hero-subtitle { font-size: 1.1rem; }
     .about-content, .education-content { flex-direction: column; text-align: center; }
     .skills-grid { grid-template-columns: 1fr; }
-    #education { background-attachment: scroll; }
 
-    /* NEW RULES TO FIX COVER PHOTO ON MOBILE */
-    .hero {
-        background-image: none; /* Hide the background image on mobile */
-        background-color: var(--bg-color); /* Show a solid background color instead */
-        height: auto; /* Let the height be automatic */
-        padding: 8rem 0;
-        color: var(--text-color); /* Use standard text color */
-    }
-    .hero-image-mobile {
-        display: block; /* Show the real image tag */
-        width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
+    /* FINAL FIX for background images on mobile */
+    .hero, #education {
+        background-attachment: scroll; /* This makes the image scroll with the page, fixing mobile bugs */
     }
 }
