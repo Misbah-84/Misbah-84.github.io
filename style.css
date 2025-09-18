@@ -1,4 +1,4 @@
-/* --- PROFESSIONAL DARK THEME V9 (FINAL MOBILE IMAGE FIX) --- */
+/* --- PROFESSIONAL DARK THEME V10 (FINAL UNIFIED FIX) --- */
 :root {
     --bg-color: #121212;
     --primary-color: #1E1E1E;
@@ -31,7 +31,8 @@ section { padding: 6rem 0; }
 .hero-image-mobile {
     display: none;
 }
-.hero { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cover-desktop.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
+/* This is the DESKTOP background. It now looks for cover.jpg */
+.hero { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
 .hero-title { font-size: 4rem; font-weight: 700; }
 .hero-subtitle { font-size: 1.5rem; font-weight: 300; margin: 1rem 0 2rem 0; }
 .cta-button { display: inline-block; background-color: var(--accent-color); color: var(--bg-color); padding: 1rem 3rem; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -83,7 +84,7 @@ section { padding: 6rem 0; }
     .skills-grid { grid-template-columns: 1fr; }
     #education { background-attachment: scroll; }
 
-    /* FINAL FIX: Revert to the IMG tag method for mobile */
+    /* The reverted fix: show the IMG tag on mobile and hide the background */
     .hero {
         background-image: none;
         background-color: var(--bg-color);
