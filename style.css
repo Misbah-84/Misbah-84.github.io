@@ -1,6 +1,4 @@
-/* --- PROFESSIONAL DARK THEME V2 --- */
-
-/* --- VARIABLES & BASIC SETUP --- */
+/* --- PROFESSIONAL DARK THEME V3 --- */
 :root {
     --bg-color: #121212;
     --primary-color: #1E1E1E;
@@ -9,7 +7,6 @@
     --subtle-text-color: #A0A0A0;
     --border-color: #2F2F2F;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.7; }
@@ -25,30 +22,18 @@ section { padding: 6rem 0; }
 .nav-menu a { color: var(--subtle-text-color); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
 .nav-menu a:hover, .nav-menu a.active { color: var(--accent-color); }
 
-/* --- HAMBURGER MENU (NEW) --- */
-.hamburger {
-    display: none; /* Hidden on desktop */
-    cursor: pointer;
-}
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--text-color);
-}
+/* --- HAMBURGER MENU --- */
+.hamburger { display: none; cursor: pointer; }
+.bar { display: block; width: 25px; height: 3px; margin: 5px auto; transition: all 0.3s ease-in-out; background-color: var(--text-color); }
 
-
-/* --- HERO SECTION --- */
-.hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #ffffff; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
+/* --- HERO SECTION (Home Page with Image) --- */
+.hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #ffffff; background-color: red; /* DEBUGGING: If you see red, the image path is wrong. */ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
 .hero-title { font-size: 4rem; font-weight: 700; }
 .hero-subtitle { font-size: 1.5rem; font-weight: 300; margin: 1rem 0 2rem 0; }
 .cta-button { display: inline-block; background-color: var(--accent-color); color: var(--bg-color); padding: 1rem 3rem; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .cta-button:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
 
-/* --- Other sections remain the same --- */
+/* Other Sections */
 .page-header { background-color: var(--primary-color); padding: 8rem 0 4rem 0; text-align: center; border-bottom: 1px solid var(--border-color); }
 .about-content { display: flex; align-items: center; gap: 3rem; }
 .about-image img { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 5px solid var(--primary-color); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
@@ -81,36 +66,13 @@ section { padding: 6rem 0; }
 
 /* --- RESPONSIVE DESIGN & MOBILE MENU --- */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block; /* Show hamburger on mobile */
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu {
-        position: fixed;
-        left: -100%; /* Hide menu off-screen */
-        top: 70px;
-        flex-direction: column;
-        background-color: var(--primary-color);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-    .nav-menu.active {
-        left: 0; /* Show menu */
-    }
-    .nav-menu li {
-        padding: 1.5rem 0;
-    }
-    
+    .hamburger { display: block; }
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    .nav-menu { position: fixed; left: -100%; top: 70px; flex-direction: column; background-color: var(--primary-color); width: 100%; text-align: center; transition: 0.3s; box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); }
+    .nav-menu.active { left: 0; }
+    .nav-menu li { padding: 1.5rem 0; }
     .hero-title { font-size: 2.5rem; }
     .hero-subtitle { font-size: 1.1rem; }
     .about-content, .education-content { flex-direction: column; text-align: center; }
