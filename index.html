@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misbah Ullah | ML Engineer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Misbah Ullah | Machine Learning Engineer & Systems Architect</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-logo">Misbah Ullah</a>
+            <a href="index.html" class="nav-logo">Misbah Ullah <span class="accent">/></span></a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="about.html" class="nav-link">About & Services</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -29,22 +36,63 @@
     </nav>
 
     <header class="hero">
-        <img class="hero-image-mobile" src="images/cover.jpg" alt="Cover photo">
+        <img class="hero-image-mobile" src="images/cover.jpeg" alt="Cover photo">
         
         <div class="container" data-aos="zoom-in">
-            <h1 class="hero-title">Misbah Ullah</h1>
-            <p class="hero-subtitle">Aspiring Machine Learning Engineer | Python Developer</p>
-            <a href="projects.html" class="cta-button">View My Work</a>
+            <h1 class="hero-title">Engineering <span>Autonomous Systems</span> & Clinical AI Models</h1>
+            <p class="hero-subtitle">Machine Learning Engineer specializing in Computer Vision surveillance pipelines, clinical decision models, and industrial automation.</p>
+            <div class="hero-cta-group">
+                <a href="projects.html" class="cta-button">Explore Ventures</a>
+                <a href="contact.html" class="cta-button secondary-cta">Book Consultation</a>
+            </div>
         </div>
     </header>
 
+    <main>
+        <!-- Brief Highlights / Core Strengths -->
+        <section class="services-section" style="padding: 5rem 0;">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title" style="margin-bottom: 2rem;">Core Specializations</h2>
+                <div class="services-grid" style="margin-top: 1rem;">
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                        <i class="fa-solid fa-eye service-icon"></i>
+                        <h3>Computer Vision & UAVs</h3>
+                        <p>Deploying real-time object tracking (YOLOv8, OBB), spatial polygon boundary auditing, smoke/fire detections, and autonomous UAV edge flight coordinates.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-brain service-icon"></i>
+                        <h3>Clinical AI & Predictors</h3>
+                        <p>Training decision support classifiers (StrokeRisk AI, Diabetes predictor) combining SMOTE-balanced datasets, soft-voting ensembles, and clinical RAG parsers.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-gears service-icon"></i>
+                        <h3>Industrial Automation</h3>
+                        <p>Developing high-accuracy conveyor tracking counting models, IoT Esp32 defense systems, and backend REST microservices (Flask, FastAPI, MongoDB).</p>
+                    </div>
+
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="about.html#services" class="cta-button secondary-cta">View All Services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Misbah Ullah. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Misbah-84" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/misbah-ullah-a551a7361/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:misbahullah84@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Misbah Ullah. All rights reserved.</p>
         </div>
     </footer>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

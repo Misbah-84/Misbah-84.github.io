@@ -3,46 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Misbah Ullah</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Contact & Booking | Misbah Ullah</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
-<body id="contact-page"> <nav class="navbar">
-     <nav class="navbar">
-    <div class="container">
-        <a href="index.html" class="nav-logo">Misbah Ullah</a>
-        <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="projects.html" class="nav-link">Projects</a></li>
-            <li><a href="education.html" class="nav-link">Education</a></li>
-            <li><a href="contact.html" class="nav-link active">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+<body id="contact-page">
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Misbah Ullah <span class="accent">/></span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About & Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <main>
-        <section class="contact-section">
+        <section class="contact-section" style="padding-top: 9.5rem; padding-bottom: 6rem;">
             <div class="container">
-                <header class="page-header" style="padding: 5rem 0 2rem 0; border: none; background: transparent;">
-                    <h1 data-aos="fade-down" class="section-title">Get In Touch</h1>
-                </header>
-                <div class="contact-content" data-aos="zoom-in">
-                    <p>I'm always open to new opportunities and collaborations. Feel free to contact me via email, phone, or connect with me on social media.</p>
-                    <h3>Email: misbahullah84@outlook.com</h3>
-                    <h3>Phone: 0311 3902053</h3>
-                    <div style="margin-top: 2rem;">
-                        <a href="mailto:misbahullah84@outlook.com" class="cta-button">Say Hello</a>
+                <h1 data-aos="fade-down" class="section-title" style="margin-bottom: 3rem;">Initiate Connection</h1>
+                
+                <div class="contact-grid">
+                    <!-- Column 1: Connection Channels -->
+                    <div class="contact-channels-panel" data-aos="fade-right">
+                        <h2>Connection Channels</h2>
+                        <p class="contact-intro">Let's align. Reach out directly for technical consultancies, systems audit inquiries, or development collaboration opportunities.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span class="label">Email Address</span>
+                                    <a href="mailto:misbahullah84@outlook.com" class="value">misbahullah84@outlook.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <span class="label">Phone Connection</span>
+                                    <a href="tel:03113902053" class="value">0311 3902053</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span class="label">Location Node</span>
+                                    <span class="value" style="font-weight: 600; font-size: 1.05rem;">Islamabad, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-contact">
+                            <a href="https://www.linkedin.com/in/misbah-ullah-a551a7361/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                            <a href="https://github.com/Misbah-84" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
                     </div>
-                    <div class="social-links-contact" style="margin-top: 2rem;">
-                        <a href="https://www.linkedin.com/in/misbah-ullah-a551a7361/" target="_blank">LinkedIn</a>
-                        <a href="https://github.com/Misbah-84" target="_blank">GitHub</a>
+
+                    <!-- Column 2: Book a Meeting Widget -->
+                    <div class="booking-widget-panel" data-aos="fade-left">
+                        <h2>Book a Meeting</h2>
+                        <p class="booking-desc">Select an available date and time slot below to request a 1-on-1 virtual sync session.</p>
+                        
+                        <div class="scheduler-container">
+                            <!-- Step 1: Calendar Grid -->
+                            <div class="calendar-step">
+                                <div class="scheduler-step-title">1. Select Date</div>
+                                <div class="calendar-month">July 2026</div>
+                                <div class="calendar-grid" id="calendar-days-grid">
+                                    <div class="calendar-day-header">Mo</div>
+                                    <div class="calendar-day-header">Tu</div>
+                                    <div class="calendar-day-header">We</div>
+                                    <div class="calendar-day-header">Th</div>
+                                    <div class="calendar-day-header">Fr</div>
+                                    <div class="calendar-day-header">Sa</div>
+                                    <div class="calendar-day-header">Su</div>
+                                    
+                                    <!-- Month offsets & days -->
+                                    <div class="calendar-day disabled">29</div>
+                                    <div class="calendar-day disabled">30</div>
+                                    <div class="calendar-day" data-day="1">1</div>
+                                    <div class="calendar-day" data-day="2">2</div>
+                                    <div class="calendar-day" data-day="3">3</div>
+                                    <div class="calendar-day disabled">4</div>
+                                    <div class="calendar-day disabled">5</div>
+                                    
+                                    <div class="calendar-day" data-day="6">6</div>
+                                    <div class="calendar-day" data-day="7">7</div>
+                                    <div class="calendar-day" data-day="8">8</div>
+                                    <div class="calendar-day" data-day="9">9</div>
+                                    <div class="calendar-day" data-day="10">10</div>
+                                    <div class="calendar-day disabled">11</div>
+                                    <div class="calendar-day disabled">12</div>
+                                    
+                                    <div class="calendar-day" data-day="13">13</div>
+                                    <div class="calendar-day" data-day="14">14</div>
+                                    <div class="calendar-day active" data-day="15">15</div>
+                                    <div class="calendar-day" data-day="16">16</div>
+                                    <div class="calendar-day" data-day="17">17</div>
+                                    <div class="calendar-day disabled">18</div>
+                                    <div class="calendar-day disabled">19</div>
+                                    
+                                    <div class="calendar-day" data-day="20">20</div>
+                                    <div class="calendar-day" data-day="21">21</div>
+                                    <div class="calendar-day" data-day="22">22</div>
+                                    <div class="calendar-day" data-day="23">23</div>
+                                    <div class="calendar-day" data-day="24">24</div>
+                                    <div class="calendar-day disabled">25</div>
+                                    <div class="calendar-day disabled">26</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 2: Time Slots -->
+                            <div class="time-step">
+                                <div class="scheduler-step-title">2. Select Time (PKT)</div>
+                                <div class="slots-grid" id="slots-grid-container">
+                                    <div class="slot-item active" data-slot="10:00 AM">10:00 AM</div>
+                                    <div class="slot-item" data-slot="11:30 AM">11:30 AM</div>
+                                    <div class="slot-item" data-slot="02:00 PM">02:00 PM</div>
+                                    <div class="slot-item" data-slot="04:30 PM">04:30 PM</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 3: Button -->
+                            <button class="booking-confirm-btn" id="confirm-booking-btn">Request Sync Session</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,11 +152,16 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Misbah Ullah. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Misbah-84" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/misbah-ullah-a551a7361/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:misbahullah84@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Misbah Ullah. All rights reserved.</p>
         </div>
     </footer>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

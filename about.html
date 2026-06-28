@@ -3,61 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Misbah Ullah</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>About & Services | Misbah Ullah</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="container">
-        <a href="index.html" class="nav-logo">Misbah Ullah</a>
-        <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link active">About</a></li>
-            <li><a href="projects.html" class="nav-link">Projects</a></li>
-            <li><a href="education.html" class="nav-link">Education</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Misbah Ullah <span class="accent">/></span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About & Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <header class="page-header">
-        <h1 data-aos="fade-down">About Me & My Skills</h1>
+        <h1 data-aos="fade-down" class="section-title">Professional Profile & Services</h1>
     </header>
 
     <main>
-        <section id="about" class="about-section">
+        <!-- Profile Overview Section -->
+        <section id="about" class="about-section" style="padding-bottom: 4rem;">
             <div class="container" data-aos="fade-right">
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="images/profile.jpg" alt="Misbah Ullah">
+                        <img src="images/profile.jpg.jpeg" alt="Misbah Ullah" onerror="this.onerror=null; this.src='images/profile.jpg';">
                     </div>
                     <div class="about-text">
                         <h2>Misbah Ullah</h2>
-                        <p>I am Misbah Ullah, a Computer Science Student. I have completed my F.Sc in Computer Science from Islamia College, Peshawar.</p>
-                        <p>My core expertise lies in Python development, Machine Learning, and AI applications. I have worked on projects including Linear Regression, Logistic Regression, YOLOv8, Brain Tumor Detection, and NLP models such as BERT.</p>
-                        <p>I am skilled in using Python libraries like Pandas, NumPy, Flask, FastAPI, and Scikit-learn for building ML solutions. I also have experience with databases and SQL, along with tools like Visual Studio, Jupyter Notebook, Git, and GitHub.</p>
-                        <p>My projects range from AI chatbots (FastAPI, PDF-based) to prompt engineering and object detection models. I am passionate about applying AI and machine learning to solve real-world problems and continuously expanding my skillset.</p>
+                        <p>I am Misbah Ullah, a Machine Learning Engineer and Computer Science student at the Institute of Space Technology (IST), Islamabad. I operate at the intersection of statistical analysis, mathematical modeling, and production-grade software engineering, specializing in deploying high-precision computer vision surveillance pipelines, autonomous edge flight algorithms, and clinical decision models.</p>
+                        <p><strong>What We Solved:</strong></p>
+                        <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+                            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-circle-check" style="position: absolute; left: 0; top: 5px; color: var(--accent-color);"></i> <strong>ConveyorTrack-AI:</strong> Engineered a real-time computer vision tracking and sorting system utilizing YOLOv8 and BoT-SORT, establishing extreme counting accuracies for fast-moving manufacturing conveyor belts.</li>
+                            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-circle-check" style="position: absolute; left: 0; top: 5px; color: var(--accent-color);"></i> <strong>Fighter UAV Autonomous System:</strong> Built robust edge-AI flight software combining TensorRT-optimized YOLO-OBB targets tracking with pyzbar QR alignment for autonomous fixed-wing UAV landing calculations.</li>
+                            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-circle-check" style="position: absolute; left: 0; top: 5px; color: var(--accent-color);"></i> <strong>VigEye Fight Detection:</strong> Developed a multi-tasking deep learning CCTV auditing pipeline to automate real-time threat monitoring, weapon localization, and fire/smoke early alerts.</li>
+                            <li style="margin-bottom: 0.8rem; position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-circle-check" style="position: absolute; left: 0; top: 5px; color: var(--accent-color);"></i> <strong>StrokeRisk Decision Ensemble:</strong> Crafted clinical prediction engines combining SMOTE-balanced datasets with soft-voting ensemble classifiers (SVM, KNN, Decision Trees) to achieve 94% precision.</li>
+                        </ul>
+                        <p><strong>What We Are Doing:</strong></p>
+                        <p>Currently researching clinical risk predictor optimizations, developing prompt engineering tools using Gemini 1.5 Flash, and structuring high-performance REST APIs (Flask, FastAPI) synchronized with MongoDB and SQL databases to run low-latency production applications.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SERVICES WE OFFER SECTION -->
+        <section id="services" class="services-section">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Services <span>I Provide</span></h2>
+                <p style="text-align: center; color: var(--subtle-text-color); max-width: 600px; margin: -1.5rem auto 3rem auto; font-size: 0.98rem;">End-to-end Machine Learning development, computer vision integration, and cloud-optimized systems automation.</p>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                        <i class="fa-solid fa-eye service-icon"></i>
+                        <h3>Computer Vision Solutions</h3>
+                        <p>Designing real-time object identification, custom YOLOv8 training, spatial tracking (BoT-SORT), fight/threat CCTV surveillance, and autonomous UAV edge flight algorithms.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-robot service-icon"></i>
+                        <h3>Conversational AI & Chatbots</h3>
+                        <p>Deploying Large Language Models (LLM) prompts enhancers, context-aware RAG vector databases (PDF parsers), and low-latency chatbot systems using the Gemini 1.5 Flash API.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-chart-pie service-icon"></i>
+                        <h3>Predictive ML & Analytics</h3>
+                        <p>Developing robust clinical prediction engines (ensemble voting grids, stroke/diabetes risks estimators) and tabular data preprocessing pipelines (SMOTE, Pandas, Numpy).</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-network-wired service-icon"></i>
+                        <h3>Full-Stack REST APIs</h3>
+                        <p>Structuring clean model endpoints and backend services in Flask/FastAPI, integrating MongoDB Atlas or SQL databases, and setting up serverless endpoints on Vercel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
         <section id="skills" class="skills-section">
             <div class="container" data-aos="slide-up">
-                <h2 class="section-title">My Technical Skills</h2>
+                <h2 class="section-title">Technical Skills Matrix</h2>
                 <div class="skills-grid">
-                    <div class="skill-category"><h3>Programming Languages</h3><div class="skill-tags"><span>C</span><span>C++</span><span>Python</span></div></div>
-                    <div class="skill-category"><h3>Python Libraries & Frameworks</h3><div class="skill-tags"><span>Pandas</span><span>NumPy</span><span>Flask</span><span>FastAPI</span><span>Scikit-learn</span><span>OpenCV</span><span>PyTorch</span></div></div>
-                    <div class="skill-category"><h3>Machine Learning & AI</h3><div class="skill-tags"><span>Linear Regression</span><span>Object Detection (YOLOv8)</span><span>NLP (BERT)</span><span>Prompt Engineering</span><span>AI Chatbots</span></div></div>
-                    <div class="skill-category"><h3>Databases & Tools</h3><div class="skill-tags"><span>SQL</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Jupyter Notebook</span></div></div>
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span>C</span><span>C++</span><span>Python</span><span>SQL</span><span>HTML5 / CSS3 / JS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Libraries & Core Frameworks</h3>
+                        <div class="skill-tags">
+                            <span>Pandas</span><span>NumPy</span><span>Flask</span><span>FastAPI</span><span>Scikit-learn</span><span>OpenCV</span><span>PyTorch</span><span>TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Machine Learning & AI</h3>
+                        <div class="skill-tags">
+                            <span>Statistical Modeling</span><span>Object Detection (YOLOv8)</span><span>NLP (BERT)</span><span>Prompt Engineering</span><span>RAG & Conversational Agents</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Systems</h3>
+                        <div class="skill-tags">
+                            <span>Git & GitHub</span><span>VS Code</span><span>Jupyter Notebooks</span><span>REST APIs</span><span>MongoDB Atlas</span><span>Linux Environment</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -65,11 +134,16 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Misbah Ullah. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Misbah-84" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/misbah-ullah-a551a7361/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:misbahullah84@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Misbah Ullah. All rights reserved.</p>
         </div>
     </footer>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>
